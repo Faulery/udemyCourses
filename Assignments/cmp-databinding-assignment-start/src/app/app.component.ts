@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  oddNumbers: number[] = [];
+  evenNumbers: number[] = [];
+
+  onEmittedNumber(increment: number) {
+    if (increment % 2 === 0) {
+      this.evenNumbers.push(increment);
+    } else {
+      this.oddNumbers.push(increment);
+    }
+  }
 }

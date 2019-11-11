@@ -32,17 +32,23 @@
     </div>
   </div>
   <hr />
+  <app-game-control
+    (emittedNumber)="onEmittedNumber($event)"
+  ></app-game-control>
   <div class="row">
-    <div class="col-xs-12">
-      <h2 class="text-center">The Even/Odd Game</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div>
-      <button class="btn btn-primary">Start the game</button>
-    </div>
-    <div>
-      <button class="btn btn-danger">Stop the game</button>
+    <div class="col-xs-12 justify-content-center">
+      <div>
+        <app-odd
+          *ngFor="let oddNumber of oddNumbers"
+          [increment]="oddNumber"
+        ></app-odd>
+      </div>
+      <div>
+        <app-even
+          *ngFor="let evenNumber of evenNumbers"
+          [increment]="evenNumber"
+        ></app-even>
+      </div>
     </div>
   </div>
 </div>
