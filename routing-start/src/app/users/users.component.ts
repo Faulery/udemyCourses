@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent {
-  users = [
+  protected users = [
     {
       id: 1,
       name: 'Max'
