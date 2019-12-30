@@ -1,0 +1,9 @@
+input, select {
+  margin-top: 0.5rem;
+}
+label {
+  margin: 0;
+}
+.warning {
+  color: red;
+}

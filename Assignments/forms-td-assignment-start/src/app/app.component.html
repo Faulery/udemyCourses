@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <h3><em>Template driven form</em></h3>
+      <form (ngSubmit)="onSubmit()" #f="ngForm">
+        <div class="form-group">
+          <label for="email">Mail:</label>
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            ngModel
+            required
+            name="email"
+          />
+          <label for="secret">Select your type of subscription</label>
+          <select
+            id="subscription"
+            class="form-control"
+            [ngModel]="defaultSubscription"
+            name="subscription"
+          >
+            <option value="basic">Basic</option>
+            <option value="advanced">Advanced</option>
+            <option value="pro">Pro</option>
+          </select>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            required
+            id="password"
+            ngModel
+            name="password"
+          />
+        </div>
+        <p class="warning" *ngIf="!f.valid && f.touched">
+          Warning: The form is invalid, fill all the inputs!
+        </p>
+        <button class="btn btn-primary" type="submit" [disabled]="!f.valid">
+          Submit
+        </button>
+      </form>
+      <div class="row" *ngIf="submitted">
+        <div class="col-xs-12">
+          <h3>Your Data</h3>
+          <p>Email: {{ user.email }}</p>
+          <p>Type of subscription: {{ user.subscription }}</p>
+          <p>Password: {{ user.password }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
