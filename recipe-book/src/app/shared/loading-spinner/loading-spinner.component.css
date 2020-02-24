@@ -1,0 +1,70 @@
+@keyframes ldio-5i9azkqjxz9-o {
+  0% {
+    opacity: 1;
+    transform: translate(0 0);
+  }
+  49.99% {
+    opacity: 1;
+    transform: translate(80.64000000000001px, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(80.64000000000001px, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+}
+@keyframes ldio-5i9azkqjxz9 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(80.64000000000001px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.ldio-5i9azkqjxz9 div {
+  position: absolute;
+  width: 80.64000000000001px;
+  height: 80.64000000000001px;
+  border-radius: 50%;
+  top: 71.68px;
+  left: 31.360000000000003px;
+}
+.ldio-5i9azkqjxz9 div:nth-child(1) {
+  background: #5cb85c;
+  animation: ldio-5i9azkqjxz9 1.0416666666666665s linear infinite;
+  animation-delay: -0.5208333333333333s;
+}
+.ldio-5i9azkqjxz9 div:nth-child(2) {
+  background: #337ab7;
+  animation: ldio-5i9azkqjxz9 1.0416666666666665s linear infinite;
+  animation-delay: 0s;
+}
+.ldio-5i9azkqjxz9 div:nth-child(3) {
+  background: #5cb85c;
+  animation: ldio-5i9azkqjxz9-o 1.0416666666666665s linear infinite;
+  animation-delay: -0.5208333333333333s;
+}
+.loadingio-spinner-dual-ball-txnlrg9af9q {
+  width: 224px;
+  height: 224px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-5i9azkqjxz9 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.ldio-5i9azkqjxz9 div {
+  box-sizing: content-box;
+}
